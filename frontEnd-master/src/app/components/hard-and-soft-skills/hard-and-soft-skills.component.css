@@ -1,0 +1,22 @@
+.row{
+  padding: 1.2em;
+}
+
+/*div{
+  background-color:rgb(97, 196, 235);
+}*/
+
+h4, h5{
+  display: inline;
+}
+
+#btnnuevahabilidad{
+  width:100%;
+}
+
+#botones{
+  position: absolute; 
+  left:33%;
+  top:85%;
+  bottom:100%;
+}

@@ -1,0 +1,28 @@
+.row{
+  padding: 1.2em;
+}
+
+/*div{
+  background-color:crimson;
+}*/
+
+h4, h5{
+  display: inline;
+}
+
+button{
+  width:100%;
+}
+
+textarea{
+  border:none;
+  color:inherit;
+  background-color: inherit;
+  resize:none;
+  width:100%;
+}
+
+table{
+  border-radius:50px;
+  overflow:hidden;
+}

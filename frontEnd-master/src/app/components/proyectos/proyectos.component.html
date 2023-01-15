@@ -1,0 +1,32 @@
+<div class="row externo">
+
+  <p class="h3 text-light">Proyectos</p>
+  <div class="col mb-2">
+    <button type="button" class="btn btn-success" routerLink="/nuevoproyecto" *ngIf="isLogged">
+      Agregar Proyecto
+    </button>
+  </div>
+
+  <div class="container-fluid rounded-3 bg-dark text-light mb-3" *ngFor="let proyecto of proyecto">
+    <div class="row">
+      <div class="col-sm-12 col-md-7 col-lg-7 bg-dark text-light titulo_descripcion mt-2 mb-2">
+        <p class="h3 mt-2 mb-4 text-center bg-dark text-light"> {{proyecto.nombre}}</p>
+        <textarea >{{proyecto.descripcion}}</textarea>
+        <div class="col-4">
+          <button type="button" *ngIf="isLogged" class="btn btn-warning" routerLink="/editproyecto/{{proyecto.id}}">
+            <i class="bi bi-pencil-fill"></i></button>
+          <button type="button" *ngIf="isLogged" class="btn btn-danger" (click)="delete(proyecto.id)">
+            <i class="bi bi-trash-fill"></i></button>
+        </div>
+      </div>
+      
+        
+      
+      <div class="col-sm-12 col-md-5 col-lg-5 img-column mt-2 mb-2">
+        <img class="img-fluid img-proyecto" src={{proyecto.img}}>
+      </div>
+    </div>
+  </div>
+
+</div>
+
